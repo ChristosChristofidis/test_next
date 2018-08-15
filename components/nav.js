@@ -1,6 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 
+import { DatePicker } from 'antd';
+
+
+import stylesheet from 'antd/dist/antd.css';
+
 
 const links = [
   { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
@@ -11,6 +16,8 @@ const links = [
 
 const Nav = () => (
   <nav>
+    <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+    <DatePicker/>
     <ul>
       <li>
         <Link prefetch href="/">

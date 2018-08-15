@@ -3,12 +3,9 @@ import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
 import Nav from '../components/nav'
-import { DatePicker } from 'antd';
 
 
-if (typeof window !== 'undefined') {
-  require('style-loader!css-loader!antd/dist/antd.css');
-}
+
 
   
 
@@ -16,7 +13,7 @@ const Home = () => (
   <div>
     <Head title="Home" />
     <Nav />
-    
+
     <div className="hero">
       <h1 className="title">Welcome to Next!</h1>
       <p className="description">
@@ -33,7 +30,6 @@ const Home = () => (
         <Link href="https://open.segment.com/create-next-app">
           <a className="card">
             <h3>Examples &rarr;</h3>
-            <DatePicker />
             <p>
               Find other example boilerplates on the{' '}
               <code>create-next-app</code> site

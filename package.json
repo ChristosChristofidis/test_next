@@ -10,6 +10,7 @@
     "@zeit/next-typescript": "^1.1.0",
     "antd": "^3.8.1",
     "babel-plugin-import": "^1.8.0",
+    "babel-plugin-inline-import": "^3.0.0",
     "css-loader": "^1.0.0",
     "css-modules-require-hook": "^4.2.3",
     "hoist-non-react-statics": "^3.0.1",
