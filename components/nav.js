@@ -5,63 +5,26 @@ import { DatePicker } from 'antd';
 
 
 import stylesheet from 'antd/dist/antd.css';
-
-
-const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+import { Menu, Icon } from 'antd';
 
 const Nav = () => (
-  <nav>
+  <div>
     <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-    <DatePicker/>
-    <ul>
-      <li>
-        <Link prefetch href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <ul>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
-            <Link href={href}>
-              <a>{label}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </ul>
-
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
+    <Menu
+                        theme="dark"
+                        mode="horizontal"
+                        defaultSelectedKeys={["1"]}
+                        style={{ lineHeight: '64px' }}
+                        breakpoint="lg"
+                        collapsedWidth="0"
+                    >           <Menu.Divider key='6'>fe</Menu.Divider>
+                                <Menu.Item key="1">dsasf</Menu.Item>
+                                <Menu.Item key="2">nav 2</Menu.Item>
+                                <Menu.Item key="3">nav 3</Menu.Item>
+                                <Menu.Item key="4"><Icon spin={true} type="plus-circle" className="publish-btn" /></Menu.Item>
+                                <Menu.Item key="5"><Icon spin={true} type="login" className="loggin-btn" /></Menu.Item>
+                    </Menu>
+  </div>
 )
 
 export default Nav

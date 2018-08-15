@@ -1,12 +1,14 @@
 {
-    "plugins": [
-      [
-        "inline-import",
-        {
-          "extensions": [".css"]
-        }
-      ]
+  "plugins": [
+    [
+      "inline-import",
+      {
+        "extensions": [".css"]
+      }
     ],
-    "presets": ["next/babel"],
-    "ignore": []
-  }
+    ["import", { "libraryName": "antd", "libraryDirectory": "lib"}, "ant"],
+    ["import", { "libraryName": "ant-mobile", "libraryDirectory": "lib"}, "ant-mobile"]
+  ],
+  "presets": ["next/babel"],
+  "ignore": []
+}

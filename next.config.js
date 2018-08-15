@@ -5,8 +5,10 @@ module.exports = {
       fs: 'empty'
     }
 
+    
     config.module.rules.push({test:'/\.css$/', 'use':'style-loader'})
     config.module.rules.push({test:'/\.css$/', 'use':'css-loader'})
+    config.module.rules.push({test:'/\.css$/', 'use':'less-loader'})
     config.module.rules.push({test:'/\.ts$/', 'use':'ts-loader'})
 
     return config
