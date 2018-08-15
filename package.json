@@ -1,0 +1,25 @@
+{
+  "name": "create-next-example-app",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-less": "^0.3.0",
+    "@zeit/next-typescript": "^1.1.0",
+    "antd": "^3.8.1",
+    "babel-plugin-import": "^1.8.0",
+    "css-loader": "^1.0.0",
+    "css-modules-require-hook": "^4.2.3",
+    "hoist-non-react-statics": "^3.0.1",
+    "ignore-loader": "^0.1.2",
+    "immutable": "^3.8.2",
+    "isomorphic-style-loader": "^4.0.0",
+    "less": "^3.8.1",
+    "next": "^5.1.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "style-loader": "^0.22.1"
+  }
+}
