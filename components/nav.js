@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { DatePicker } from 'antd';
+
 
 const links = [
   { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
@@ -11,7 +11,6 @@ const links = [
 
 const Nav = () => (
   <nav>
-
     <ul>
       <li>
         <Link prefetch href="/">
