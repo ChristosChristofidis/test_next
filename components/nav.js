@@ -17,7 +17,7 @@ const Nav = () => (
                         style={{ lineHeight: '64px' }}
                         breakpoint="lg"
                         collapsedWidth="0"
-                    >           <Menu.Divider key='6'>fe</Menu.Divider>
+                    >  
                                 <Menu.Item key="1">dsasf</Menu.Item>
                                 <Menu.Item key="2">nav 2</Menu.Item>
                                 <Menu.Item key="3">nav 3</Menu.Item>
